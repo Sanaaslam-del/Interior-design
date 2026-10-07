@@ -52,7 +52,7 @@ function Projects() {
       </section>
 
       {/* Filters */}
-      <section className="border-y border-stone-200 bg-stone-100 py-8 dark:border-stone-800 dark:bg-stone-900">
+      <section className="border-y border-stone-200 bg-stone-50 py-8 dark:border-stone-800 dark:bg-stone-950">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
 
           <div className="flex flex-wrap gap-2">
@@ -62,8 +62,8 @@ function Projects() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-5 py-2.5 text-sm transition ${
                   activeCategory === category
-                    ? "bg-stone-900 text-white dark:bg-white dark:text-stone-900"
-                    : "border border-stone-300 text-stone-600 hover:border-stone-700 hover:text-stone-900 dark:border-stone-700 dark:text-stone-300 dark:hover:border-stone-400 dark:hover:text-white"
+                    ? "bg-amber-800 text-white dark:bg-amber-300 dark:text-stone-950"
+                    : "border border-stone-300 text-stone-600 hover:border-amber-800 hover:text-amber-900 dark:border-stone-700 dark:text-stone-300 dark:hover:border-amber-300 dark:hover:text-amber-200"
                 }`}
               >
                 {category}
@@ -76,7 +76,7 @@ function Projects() {
             placeholder="Search projects..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full border border-stone-300 bg-stone-50 px-5 py-3 text-sm text-stone-900 outline-none placeholder:text-stone-500 focus:border-stone-600 dark:border-stone-700 dark:bg-stone-950 dark:text-white dark:placeholder:text-stone-400 dark:focus:border-stone-400 lg:w-72"
+            className="w-full border border-stone-300 bg-white px-5 py-3 text-sm text-stone-900 outline-none placeholder:text-stone-500 focus:border-amber-800 dark:border-stone-700 dark:bg-stone-900 dark:text-white dark:placeholder:text-stone-400 dark:focus:border-amber-300 lg:w-72"
           />
 
         </div>
